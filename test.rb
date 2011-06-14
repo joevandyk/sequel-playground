@@ -8,9 +8,9 @@ DB = Sequel.connect('postgres://localhost/test')
 items = DB[:items] # Create a dataset
 
 # Populate the table
-items.insert(:name => 'abc', :price => rand * 100)
-items.insert(:name => 'def', :price => rand * 100)
-items.insert(:name => 'ghi', :price => rand * 100)
+items.insert(:name => 'abc', :price => rand * 100, :sku => 'first')
+items.insert(:name => 'def', :price => rand * 100, :sku => 'second')
+items.insert(:name => 'ghi', :price => rand * 100, :sku => 'third')
 
 # Print out the number of records
 puts "Item count: #{items.count}"
