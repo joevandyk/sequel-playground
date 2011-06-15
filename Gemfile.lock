@@ -3,6 +3,9 @@ GEM
   specs:
     pg (0.11.0)
     sequel (3.24.1)
+    sequel_pg (1.1.0)
+      pg (>= 0.8.0)
+      sequel (>= 3.24.0)
 
 PLATFORMS
   ruby
@@ -10,3 +13,4 @@ PLATFORMS
 DEPENDENCIES
   pg
   sequel
+  sequel_pg
