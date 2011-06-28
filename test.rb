@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'sequel'
-require 'sequel/adapters/postgres'
-require 'sequel_pg'
 require 'benchmark'
 
 DB = Sequel.connect('postgres://localhost/test')
