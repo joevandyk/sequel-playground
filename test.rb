@@ -9,5 +9,6 @@ items = DB[:orders] # Create a dataset
 puts items.count
 
 DB.run "set search_path to myschema;"
-items = DB[:distributors;] # Create a dataset
+items = DB[:distributors] # Create a dataset
 puts items.count
+sleep 100
